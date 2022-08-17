@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Decodificador de texto</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+
+<body>
+    <main>
+        <header class="logo-divider">
+            <img src="assets/Vector.svg" alt="Logo Alura" id="logo">
+            <nav id="nav-link">
+                <ul>
+                    <li class="social-media"><a href="https://www.linkedin.com/in/elielthon-soares/" target="_blank"><img
+                                src="assets/linkedin-in-brands.svg" alt="linkedin"><p class="description">Linkedin</p></a></li>
+                    <li class="social-media"><a href="https://github.com/LetoMurakai" target="_blank"><img
+                                src="assets/github-brands.svg" alt="github"><p class="description">Github</p></a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="entrada">
+            <textarea name="msgTxt" id="msgTxt" placeholder="Digite seu texto"></textarea>
+            <div class="informacao"><img src="assets/Info.svg" alt="informação"><sub>Aceita maiúsculas e acentos.</sub><sub><code>Ctrl</code> +.</sub></div>
+            <div class="inputGroup">
+                <button type="button" class="criptografar" onclick="criptografar()">Criptografar</button>
+                <button type="button" id="descriptografar" onclick="descriptografar()"
+                    disabled="false">Descriptografar</button>
+            </div>
+        </section>
+        <aside id="saida">
+            <div id="semMensagem">
+                <img src="assets/High quality products 1 1.svg" alt="Sem mensagem encontrada">
+                <h2>Nenhuma mensagem encontada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <textarea name="criptoTxt" id="msgCriptografada" readonly></textarea>
+            <div class="inputGroup">
+                <button type="button" id="copiar" onclick="copiarTexto()">Copiar</button>
+                <button type="button" id="limpar" onclick="limparTexto()"><img src="assets/delete.svg" alt="deletar"
+                        width="35"></button>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p>Feito com &#128153 <a href="https://www.linkedin.com/in/elielthon-soares/" target="_blank">Elielthon (Leto)</a> © 2022</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
